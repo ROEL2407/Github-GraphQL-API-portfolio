@@ -17,7 +17,7 @@ app.set("views", "./views");
 app.use(express.static("public"));
 
 app.get("/", function (req, res) {
-  // Get the repository information from my GitHub account
+  // Get the repository information from our GitHub account
   graphqlAuth(`{
     viewer {
           repositories(first: 100, orderBy: {field: UPDATED_AT, direction: DESC}, privacy: PUBLIC, isFork: true) {
@@ -33,9 +33,9 @@ app.get("/", function (req, res) {
           }
         }
       }`).then((data) => {
-    console.log(data);
+    console.log(data.viewer.repositories.edges);
     res.render("index", {
-      projects: data.user.repositories.edges,
+      projects: data.viewer.repositories.edges,
     });
   });
 });
