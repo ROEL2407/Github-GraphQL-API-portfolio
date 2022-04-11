@@ -1,0 +1,83 @@
+/* --- Styling Reset --- */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/* --- End Styling Reset --- */
+/* --- Font face --- */
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Montserrat_i";
+    src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  }
+ /* --- Font face --- */
+
+ body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    background-color: rgb(179, 179, 255);
+}
+
+/* --- Header --- */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 0em;
+    margin-bottom: 1em;
+}
+/* --- end header --- */
+
+/* --- main --- */
+#projects_wrapper {
+    padding: 1em;
+}
+
+#projects_wrapper article {
+    margin: 2em 0em;
+    padding: 1em 1em 2em 1em;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#projects_wrapper article {
+    margin-top: 0em;
+}
+
+#projects_wrapper article h2 {
+    margin-bottom: 0.25em;
+}
+
+#projects_wrapper article p {
+    margin-bottom: 1.5em;
+}
+
+#projects_wrapper article a {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 0.5em;
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+    box-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
+}
+
+#projects_wrapper article a:hover {
+    box-shadow: none;
+}
+
+/* --- Support checks --- */
+
+@supports(display:flex) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
