@@ -72,6 +72,10 @@ header {
     box-shadow: none;
 }
 
+.demo {
+    margin-left: 0.5em;
+}
+
 /* --- Support checks --- */
 
 @supports(display:flex) {
