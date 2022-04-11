@@ -21,6 +21,7 @@ app.get("/", function (req, res) {
           repositories(first: 100, orderBy: {field: UPDATED_AT, direction: DESC}, privacy: PUBLIC, isFork: true) {
             edges {
               node {
+                id
                 name
                 url
                 description
@@ -31,7 +32,6 @@ app.get("/", function (req, res) {
           }
         }
       }`).then((data) => {
-    console.log(data.viewer.repositories.edges);
     res.render("index", {
       projects: data.viewer.repositories.edges,
     });
@@ -39,17 +39,29 @@ app.get("/", function (req, res) {
 });
 
 app.get("/detail/:id", function (req, res) {
-  fetch(
-    `https://www.rijksmuseum.nl/api/nl/collection/${req.params.id}?key=${apiKey}`
-  )
-    .then(async (response) => {
-      const artWorks = await response.json();
-      res.render("detail", {
-        pageTitle: "Art" + req.params.id,
-        data: artWorks.artObject,
-      });
-    })
-    .catch((err) => res.send(err));
+  // Get the repository information from our GitHub account
+  graphqlAuth(
+    `{
+    node(id:"` +
+      req.params.id +
+      `") {
+        ... on Repository {
+          id
+          nameWithOwner
+          name
+          url
+          description
+          updatedAt
+          homepageUrl
+        }
+      }
+    }`
+  ).then((data) => {
+    console.log(data);
+    res.render("detail", {
+      projects: data,
+    });
+  });
 });
 
 app.listen(port, () => {
