@@ -1,12 +1,10 @@
 require("dotenv").config();
 const express = require("express");
-const projects = require("./examples/projects/routes/projects");
-const apiKey = process.env.APIKEY;
 const port = process.env.PORT;
 const { graphql } = require("@octokit/graphql");
 const graphqlAuth = graphql.defaults({
   headers: {
-    authorization: "token " + process.env.APILKEY,
+    authorization: "token " + process.env.APIKEY,
   },
 });
 const app = express();
