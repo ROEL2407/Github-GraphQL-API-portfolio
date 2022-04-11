@@ -8,21 +8,19 @@
       <!-- insert color picker -->
     </header>
     <main>
-      <section>
+      <section id="projects_wrapper">
         <% projects.forEach(function(item){%>
         <article>
           <h2><%- item.node.name %></h2>
           <p><%- item.node.description %></p>
           <!-- details  -->
-          <p><a href="detail/<%- item.node.id %>">Details</a></p>
+          <a href="detail/<%- item.node.id %>">Details</a>
           <% if (item.node.homepageUrl) { %>
-          <p>
-            <a
+          <a
               href="<%- item.node.homepageUrl %>"
               alt="Watch <%= item.node.name %> in action"
               >Live demo</a
             >
-          </p>
           <% } %>
         </article>
         <%}) %>
