@@ -1,6 +1,4 @@
-# Project 2: GitHub Hackaton 2021/22
-
-Four days of creative exploration using the GitHub GraphQL API as the outset.
+# Github GraphQL API Portfolio website
 
 ## Table of Contents
 - [Synopsis](#synopsis)
@@ -8,62 +6,24 @@ Four days of creative exploration using the GitHub GraphQL API as the outset.
 - [Communication](#communication)
 - [Goals](#goals)
 - [Grading](#grading)
-- [Programme](#programme)
+- [License](#license)
 
-## Synopsis
-- Course: Project 2: GitHub Hackaton
-- Course Coordinator: Justus Sturkenboom ([@ju5tu5](https://github.com/ju5tu5)) & Robert Spier ([@roberrrt-s](https://github.com/roberrrt-s))
-- Minor Coordinator(s): Joost Faber ([@joostf](https://github.com/joostf)) & Koop Reynders ([@KoopReynders](https://github.com/KoopReynders))
-- Lecturers: Robert Spier ([@roberrrt-s](https://github.com/roberrrt-s) & Justus Sturkenboom ([@ju5tu5](https://github.com/ju5tu5))
-- Student Assistants: Daan Korver ([@daankorver](https://github.com/DaanKorver))
-- Credit: ??
-- Academic year: 2021-2022
-- Programme: Communication and Multimedia Design (full time bachelor)
-- Language: Dutch instructions and English resources
+## Commits
+In this repo we will commit our work. To make this more visible for ourself and others we've added little headers to the commit titles:
+* Created = a file is created
+* Updated = updated a file or piece of code
+* Delete = deleted a file
 
-## Description
+## Resources
+### Credits
+* Our teachers at the minor Web Development.
+* Our fellow students who've helped us resolving some problems and learning us new types of tricks.
+* Stackoverflow for giving us the answers that we could tweak or that helped us understand our problem in the code better.  
+<hr />
 
-## Communication
-- [Github](https://github.com/cmda-minor-web/progressive-web-apps-2122)
-- [Microsoft Teams](https://teams.microsoft.com/l/channel/19%3aacf0946687dc4ba9a9400fb7c6d7a81c%40thread.tacv2/05%2520-%2520Progressive%2520Web%2520Apps)
-- [Brightspace](https://dlo.mijnhva.nl/d2l/home/324147)
+## License
+Usage is provided under the [MIT License](https://github.com/ROEL2407/Github-GraphQL-API-portfolio/blob/main/LICENSE). See LICENSE for the full details.
 
-If you have questions:
-- [Look at the additional resources]()
-- [Use a search engine like startpage](https://www.startpage.com/)
-- [Ask questions on MS Teams](https://teams.microsoft.com/l/channel/19%3a2b5ac900b14c4b68a31dc5dbb380dcbe%40thread.tacv2/06%2520-%2520Real%2520Time%2520web) (please help each other!)
-- [Contact a student-assisstant](#synopsis)
-- [Contact a lecturer](#synopsis)
-
-## Goals
-After finishing this program you can:
-- ...
-
-## Grading
-Your efforts will be graded using a single point rubric (see below). You will have to pass the criterion (centre column) to pass the course. During the test you will be consulted and will be given feedback on things we think deficient and things we think are an improvement on the criterion.
-
-| Deficiency | Criterion | Improvement |
-|:--|:--|:--|
-|   |   |   |
-
-## Programme
-
-### Monday 11 april
-We start out with an explanation of this Hackaton and a short introduction on GraphQL and working with the GitHub GraphQL API.
-
-| Time | Who | Activity |
-|:--|:--|:--|
-| 09.30 | Tribe *+(Robert, Justus)* | Hackaton Kickoff |
-| 12.30 | Tribe *+(Daan)* | Hack.. hack.. hack.. |
-| 16.00 | Tribe | Wrap-up for the day |
-
-### Tuesday 12 april
-
-
-### Wednesday 13 april
-
-
-### Monday 14 april
 
 
 <!-- Here are some hints for your project! -->
