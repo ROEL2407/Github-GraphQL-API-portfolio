@@ -9,8 +9,8 @@
         <p><%- item.node.description %></p>
         <!-- details  -->
         <p>Details</p>
-        <% if (item.node.homepageUrl !== null) { %>
-        <p><a href="<%- item.node.homepageUrl %>">Live demo</a></p>
+        <% if (item.node.homepageUrl) { %>
+        <p><a href="<%- item.node.homepageUrl %>"  alt="Watch <%= item.node.name %> in action">Live demo</a></p>
         <% } %>
       </article>
       <%}) %>
