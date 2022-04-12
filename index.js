@@ -8,6 +8,7 @@ const graphqlAuth = graphql.defaults({
   },
 });
 const app = express();
+var MarkdownIt = require("markdown-it");
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -61,7 +62,6 @@ app.get("/detail/:id", function (req, res) {
       }
     }`
   ).then((data) => {
-    console.log(data.node.owner.login);
     graphqlAuth(
       `{
     
@@ -80,10 +80,13 @@ app.get("/detail/:id", function (req, res) {
     
       }`
     ).then((newData) => {
-      console.log(newData.repository.object.text);
+      // convert readme to html
+      md = new MarkdownIt();
+      var readMeHTML = md.render(newData.repository.object.text);
+
       res.render("detail", {
         projects: data,
-        readMe: newData.repository.object.text,
+        readMe: readMeHTML,
       });
     });
   });

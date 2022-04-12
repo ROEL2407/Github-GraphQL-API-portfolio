@@ -28,7 +28,6 @@
     "express": "^4.17.3",
     "js-beautify": "^1.14.3",
     "markdown-it": "^12.3.2",
-    "marked": "^4.0.14",
     "nodemon": "^2.0.15"
   }
 }

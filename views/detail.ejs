@@ -23,17 +23,8 @@
           >Naar Live demo</a
         >
         <% } %>
-        <p><%-readMe %></p>
       </section>
-      <div id="content"></div>
-
-      <script>
-        var MarkdownIt = require("markdown-it"),
-          md = new MarkdownIt();
-        var result = md.render("<%-readMe %>");
-
-        document.getElementById("content").innerHTML = result;
-      </script>
+      <section id="readMe"><%-readMe %></section>
     </main>
     <footer></footer>
     <script src="/scripts/main.js"></script>
