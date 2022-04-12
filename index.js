@@ -18,7 +18,7 @@ app.get("/", function (req, res) {
   // Get the repository information from our GitHub account
   graphqlAuth(`{
     viewer {
-          repositories(first: 100, orderBy: {field: UPDATED_AT, direction: DESC}, privacy: PUBLIC, isFork: true) {
+          repositories(first: 100, orderBy: {field: CREATED_AT, direction: DESC}, privacy: PUBLIC, isFork: true) {
             edges {
               node {
                 id
