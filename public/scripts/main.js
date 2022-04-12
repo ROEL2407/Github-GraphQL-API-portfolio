@@ -10,11 +10,12 @@ menuOpen();
 
 function colorPicker() {
     const color_btns = document.querySelectorAll("#colorArray button");
-    console.log(color_btns);
+    const body = document.querySelector("body");
+
     color_btns.forEach(function (element) {
-        console.log(element);
         element.addEventListener("click", function() {
-           
+            body.className = "";
+            body.classList.add(this.value);
         });
     });
 }
