@@ -23,12 +23,19 @@
           >Naar Live demo</a
         >
         <% } %>
-        <p><%-readMe.repository.object.text %></p>
+        <p><%-readMe %></p>
       </section>
+      <div id="content"></div>
+
+      <script>
+        var MarkdownIt = require("markdown-it"),
+          md = new MarkdownIt();
+        var result = md.render("<%-readMe %>");
+
+        document.getElementById("content").innerHTML = result;
+      </script>
     </main>
-    =======
     <footer></footer>
     <script src="/scripts/main.js"></script>
-    >>>>>>> 31eb1cc8dad60f945982e8d13ca84b3d0a7688ae
   </body>
 </html>
