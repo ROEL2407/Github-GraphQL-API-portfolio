@@ -8,7 +8,6 @@ const graphqlAuth = graphql.defaults({
   },
 });
 const app = express();
-var MarkdownIt = require("markdown-it");
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -81,7 +80,12 @@ app.get("/detail/:id", function (req, res) {
       }`
     ).then((newData) => {
       // convert readme to html
-      md = new MarkdownIt();
+      var md = require("markdown-it")({
+        html: true,
+        linkify: true,
+        typographer: true,
+      });
+
       var readMeHTML = md.render(newData.repository.object.text);
 
       res.render("detail", {
