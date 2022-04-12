@@ -55,11 +55,11 @@ header {
     margin-bottom: 0.25em;
 }
 
-#projects_wrapper article p {
+#projects_wrapper article p, #detail p {
     margin-bottom: 1.5em;
 }
 
-#projects_wrapper article a {
+#projects_wrapper article a, #detail a {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
     padding: 0.5em;
@@ -75,6 +75,16 @@ header {
 .demo {
     margin-left: 0.5em;
 }
+
+/* --- detail --- */
+#detail {
+     padding-left: 1em;
+}
+
+#detail h2 {
+    margin: 1em 0em;
+} 
+/* --- end detail --- */
 
 /* --- Support checks --- */
 
