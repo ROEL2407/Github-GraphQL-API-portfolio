@@ -2,22 +2,30 @@
 <html lang="en">
   <%- include('./components/head.ejs') -%>
   <body>
-    <header>
-      <%- include('./components/header.ejs') -%>
-    </header>
+    <header><%- include('./components/header.ejs') -%></header>
     <main>
       <section id="detail">
-          <h2><%- projects.node.name %></h2>
-          <p><%- projects.node.description %></p>
-          <!-- details  -->
-          <a href="<%- projects.node.url %>" alt="go to the Github page" target="_blank">Naar GitHub</a>
-          <% if (projects.node.homepageUrl !== null) { %>
-          <a href="<%- projects.node.homepageUrl %>" alt="Watch <%= projects.node.name %> in action" class="demo" target="_blank">Naar Live demo</a>
-          <% } %>
+        <h2><%- projects.node.name %></h2>
+        <p><%- projects.node.description %></p>
+        <!-- details  -->
+        <a
+          href="<%- projects.node.url %>"
+          alt="go to the Github page"
+          target="_blank"
+          >Naar GitHub</a
+        >
+        <% if (projects.node.homepageUrl !== null) { %>
+        <a
+          href="<%- projects.node.homepageUrl %>"
+          alt="Watch <%= projects.node.name %> in action"
+          class="demo"
+          target="_blank"
+          >Naar Live demo</a
+        >
+        <% } %>
+        <p><%-readMe.repository.object.text %></p>
       </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>

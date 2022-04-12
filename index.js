@@ -53,13 +53,38 @@ app.get("/detail/:id", function (req, res) {
           description
           updatedAt
           homepageUrl
+          owner {
+            login
+          }
         }
+
       }
     }`
   ).then((data) => {
-    console.log(data);
-    res.render("detail", {
-      projects: data,
+    console.log(data.node.owner.login);
+    graphqlAuth(
+      `{
+    
+        repository(owner: "` +
+        data.node.owner.login +
+        `", name: "` +
+        data.node.name +
+        `") {
+          object(expression: "HEAD:README.md") {
+           ... on Blob {
+             text
+           }
+          }
+    
+          }
+    
+      }`
+    ).then((newData) => {
+      console.log(newData.repository.object.text);
+      res.render("detail", {
+        projects: data,
+        readMe: newData,
+      });
     });
   });
 });
