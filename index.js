@@ -83,7 +83,7 @@ app.get("/detail/:id", function (req, res) {
       console.log(newData.repository.object.text);
       res.render("detail", {
         projects: data,
-        readMe: newData,
+        readMe: newData.repository.object.text,
       });
     });
   });
