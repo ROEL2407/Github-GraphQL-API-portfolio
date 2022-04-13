@@ -16,7 +16,7 @@
             <div>
               <span
                 class="dot"
-                style="background-color: <%-language.color%>"
+                style="background-color: <%- language.color %>"
               ></span>
               <p><%-language.name%></p>
             </div>
@@ -43,7 +43,9 @@
         <%}) %>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <%- include('./components/footer.ejs') -%>
+    </footer>
     <script src="/scripts/main.js"></script>
   </body>
 </html>
