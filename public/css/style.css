@@ -294,6 +294,10 @@ header #chooseBG {
     }
     
     @supports (display: flex) {
+        header a:first-of-type {
+            white-space: nowrap;
+        }
+        
         header {
             padding: 1em;
         }
