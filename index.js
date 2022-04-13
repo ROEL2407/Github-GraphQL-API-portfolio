@@ -37,10 +37,12 @@ app.get("/", function (req, res) {
               }
             }
           }
+          email
         }
       }`).then((data) => {
     res.render("index", {
       projects: data.viewer.repositories.edges,
+      email: data.viewer.email,
       name: name,
     });
   });
