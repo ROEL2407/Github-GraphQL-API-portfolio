@@ -39,16 +39,18 @@ button {
 
 /* --- Header --- */
 header {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em 0em;
+    padding: 1em;
     margin-bottom: 1em;
-}
-header div {
-    width: 100vw;
+    min-height: 5.1em;
 }
 
 header a {
     color: rgb(0, 0, 0);
+    display: inline-block;
+    margin-right: 19vw;
+    vertical-align: baseline;
 }
 
 header button {
@@ -59,9 +61,15 @@ header button {
     background-color: rgb(179, 179, 255);
 }
 
+header #chooseBG {
+    position: absolute;
+}
+
 #colorArray {
+    z-index: 1;
     position: absolute;
     top: 5.15em;
+    left: 0em;
     width: 100%;
     padding: 1em;
     background-color: white;
@@ -115,6 +123,7 @@ header button {
 
 #projects_wrapper article {
     margin-top: 0em;
+    border-radius: 1em;
 }
 
 #projects_wrapper article h2 {
@@ -146,17 +155,108 @@ header button {
      padding-left: 1em;
 }
 
+#detail div {
+    margin-bottom: 2em;
+}
+
 #detail h2 {
     margin: 1em 0em;
 } 
+
+/* --- readme --- */
+#readMe {
+    padding: 1em;
+}
+
+#readMe ul {
+    padding: 0em 1em;
+}
+
+#readMe h2, #readMe h3, #readMe h4 {
+    margin: 0.5em 0em;
+}
+
+#readMe img {
+    width: 100%;
+}
+
+#readMe a {
+    text-decoration: underline;
+}
+
+/* --- end readme --- */
+
+.dot {
+    height: 1em;
+    width: 1em;
+    margin: 0 0.5em 0 0;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  #languages p {
+    padding: 0 0.5em 0 0;
+  }
+
 /* --- end detail --- */
+/* --- end main --- */
 
 /* --- Support checks --- */
 
 @supports(display:flex) {
-    header div:first-of-type {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 4em;
+    }
+
+    header a {
+        margin-right: 0em;
+        vertical-align: initial;
+    }
+
+    header #chooseBG {
+        position: relative;
+    }
+
+    #projects_wrapper {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        flex-wrap: wrap;
     }
+
+    #projects_wrapper article {
+        position: relative;
+        width: 20em;
+        height: 20em;
+    }
+
+    #projects_wrapper article > div:last-of-type {
+        position: absolute;
+        bottom: 1.5em;
+    }
+
+    #projects_wrapper article p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+  
+    #languages {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 2.5em;
+    }
+
+    #projects_wrapper #languages p {
+        display: inline-block;
+        margin: 0em;
+    }
+
 }
