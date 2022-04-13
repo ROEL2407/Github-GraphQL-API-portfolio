@@ -7,7 +7,6 @@ window.onload = () => {
 const getValues = () => {
   const body = document.querySelector("body");
   const item = localStorage.getItem("color");
-  console.log(item);
 
   body.classList.add(item);
 };
