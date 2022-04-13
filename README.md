@@ -29,6 +29,7 @@ Example
         align-items: center;
         padding: 1em 4em;
     }
+ }
 ```
 
 
