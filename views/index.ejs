@@ -13,14 +13,17 @@
           <!-- languages -->
           <div id="languages">
             <% item.node.languages.nodes.forEach(function(language){%>
-            <span
-              class="dot"
-              style="background-color: <%-language.color%>"
-            ></span>
-            <p><%-language.name%></p>
+            <div>
+              <span
+                class="dot"
+                style="background-color: <%-language.color%>"
+              ></span>
+              <p><%-language.name%></p>
+            </div>
             <%}) %>
           </div>
           <!-- details  -->
+          <div>
           <a
             href="detail/<%- item.node.id %>"
             alt="go to the Github page"
@@ -36,6 +39,7 @@
             >Live demo</a
           >
           <% } %>
+          </div>
         </article>
         <%}) %>
       </section>
