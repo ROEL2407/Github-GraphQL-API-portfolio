@@ -8,7 +8,6 @@ const graphqlAuth = graphql.defaults({
   },
 });
 const app = express();
-const name = process.env.NAME;
 
 app.set("view engine", "ejs");
 app.set("views", "./views");
@@ -38,12 +37,13 @@ app.get("/", function (req, res) {
             }
           }
           email
+          name
         }
       }`).then((data) => {
     res.render("index", {
       projects: data.viewer.repositories.edges,
       email: data.viewer.email,
-      name: name,
+      name: data.viewer.name,
     });
   });
 });
@@ -68,8 +68,14 @@ app.get("/detail/:id", function (req, res) {
           }
         }
       }
-    }`
+    
+    viewer{
+    email
+    name
+  }
+}`
   ).then((data) => {
+    console.log(data);
     graphqlAuth(
       `{
         repository(owner: "` +
@@ -98,7 +104,8 @@ app.get("/detail/:id", function (req, res) {
       res.render("detail", {
         projects: data,
         readMe: readMeHTML,
-        name: name,
+        email: data.viewer.email,
+        name: data.viewer.name,
       });
     });
   });
