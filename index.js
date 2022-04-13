@@ -28,6 +28,12 @@ app.get("/", function (req, res) {
                 description
                 updatedAt
                 homepageUrl
+                languages(first: 100, orderBy: {field: SIZE, direction: DESC}) {
+                  nodes {
+                    name
+                    color
+                  }
+                }
               }
             }
           }
