@@ -60,6 +60,7 @@ In this repo we will commit our work. To make this more visible for ourselves an
 * Delete = deleted a file
 
 ## Resources
+[GitHub GraphQL API](https://docs.github.com/en/enterprise-server@3.4/graphql)
 [Markdown-it](https://www.npmjs.com/package/markdown-it)
 
 ### Credits
