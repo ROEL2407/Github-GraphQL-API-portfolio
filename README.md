@@ -8,6 +8,30 @@
 - [Grading](#grading)
 - [License](#license)
 
+## Features
+This is app is a portofolio site where you can see all your github repositories. You see your repository with a description on the homepage and the languages the code consists of. You have two buttons, one for the live demo and one to go to a detail page. On the detail page you can read te ReadMe of that project.  
+
+## Installation 
+Clone this repository
+
+```
+https://github.com/ROEL2407/Github-GraphQL-API-portfolio.git
+```
+
+Install the packages
+```
+npm install
+```
+
+Start the app
+```
+npm start
+```
+
+
+## Live Demo
+The website can be viewed live on 
+
 ## Commits
 In this repo we will commit our work. To make this more visible for ourself and others we've added little headers to the commit titles:
 * Created = a file is created
@@ -15,6 +39,8 @@ In this repo we will commit our work. To make this more visible for ourself and 
 * Delete = deleted a file
 
 ## Resources
+[Markdown-it](https://www.npmjs.com/package/markdown-it)
+
 ### Credits
 * Our teachers at the minor Web Development.
 * Our fellow students who've helped us resolving some problems and learning us new types of tricks.
