@@ -215,7 +215,12 @@ header #chooseBG {
 
 /* --- end detail --- */
 /* --- end main --- */
-
+/* --- footer --- */
+footer {
+    padding: 1em;
+    border-top: 1px solid black;
+}
+/* --- end footer --- */
 /* --- Support checks --- */
 
 @supports(display:flex) {
@@ -297,7 +302,7 @@ header #chooseBG {
         header a:first-of-type {
             white-space: nowrap;
         }
-        
+
         header {
             padding: 1em;
         }
