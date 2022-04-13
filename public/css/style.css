@@ -44,6 +44,7 @@ header {
     padding: 1em;
     margin-bottom: 1em;
     min-height: 5.1em;
+    width: 100%;
 }
 
 header a {
@@ -178,10 +179,18 @@ header #chooseBG {
 
 #readMe img {
     width: 100%;
+    margin: 1em 0em;
 }
 
 #readMe a {
     text-decoration: underline;
+}
+
+#readMe pre {
+    padding: 1em;
+    background-color: rgba(0,0,0, 0.25);
+    margin: 1em 0.5em;
+    border-radius: 0.5em;
 }
 
 /* --- end readme --- */
@@ -259,4 +268,32 @@ header #chooseBG {
         margin: 0em;
     }
 
+}
+
+/* --- end support checks --- */
+
+@media only screen and (max-width: 768px) {
+    #readMe code {
+        white-space: normal;
+    }
+
+    #readMe {
+        padding: 2em;
+        margin-bottom: 6em;
+    }
+
+    #readMe a {
+        white-space: normal;
+        word-break: break-word;
+    }
+    
+    @supports (display: flex) {
+        header {
+            padding: 1em;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+    }
 }
