@@ -3,8 +3,9 @@
   <%- include('./components/head.ejs') -%>
   <body>
     <header>
-      <a href="/">< Back</a>
-      <%- include('./components/header.ejs') -%></header>
+      <a id="back" href="/">< Back</a>
+      <%- include('./components/header.ejs') -%>
+    </header>
     <main>
       <section id="detail">
         <h2><%- projects.node.name %></h2>
@@ -29,9 +30,7 @@
       </section>
       <section id="readMe"><%-readMe %></section>
     </main>
-    <footer>
-      <%- include('./components/footer.ejs') -%>
-    </footer>
+    <footer><%- include('./components/footer.ejs') -%></footer>
     <script src="/scripts/main.js"></script>
   </body>
 </html>

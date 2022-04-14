@@ -2,322 +2,330 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 /* --- End Styling Reset --- */
 /* --- Font face --- */
 @font-face {
-    font-family: "Montserrat";
-    src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Montserrat_i";
-    src: url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
-  }
- /* --- Font face --- */
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
 
- body {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    background-color: rgb(179, 179, 255);
+@font-face {
+  font-family: "Montserrat_i";
+  src: url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+}
+/* --- Font face --- */
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  background-color: rgb(179, 179, 255);
 }
 
 /* --- Header --- */
 header {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 1em;
-    margin-bottom: 1em;
-    min-height: 5.1em;
-    width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  margin-bottom: 1em;
+  min-height: 5.1em;
+  width: 100%;
 }
 
 header a {
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    margin-right: 19vw;
-    vertical-align: baseline;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  margin-right: 19vw;
+  vertical-align: baseline;
 }
 
 header h1 {
-    margin: 0em 1em;
+  margin: 0em 1em;
 }
 
 header button {
-    max-width: 9em;
-    padding: 0.75em 0em;
-    border: none;
-    border-radius: 0.5em;
-    background-color: rgb(179, 179, 255);
+  max-width: 9em;
+  padding: 0.75em 0em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: rgb(179, 179, 255);
 }
 
 header #chooseBG {
-    position: absolute;
+  position: absolute;
 }
 
 #colorArray {
-    z-index: 1;
-    position: absolute;
-    top: 5.15em;
-    left: 0em;
-    width: 100%;
-    padding: 1em;
-    background-color: white;
+  z-index: 1;
+  position: absolute;
+  top: 5.15em;
+  left: 0em;
+  width: 100%;
+  padding: 1em;
+  background-color: white;
 }
 
 #colorArray p {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 #colorArray button {
-    margin-top: 0.75em;
-    min-width: 6em;
+  margin-top: 0.75em;
+  min-width: 6em;
 }
 
 /* --- end header --- */
 /* --- colors --- */
 
-.standard, .standard #chooseBG {
-    background-color: rgb(179, 179, 255);
+.standard,
+.standard #chooseBG {
+  background-color: rgb(179, 179, 255);
 }
 
-.red, .red #chooseBG {
-    background-color: rgb(255, 0, 0);
+.red,
+.red #chooseBG {
+  background-color: rgb(255, 0, 0);
 }
 
-.blue, .blue #chooseBG {
-    background-color: rgb(0, 0, 255);
-    color: white;
+.blue,
+.blue #chooseBG {
+  background-color: rgb(0, 0, 255);
+  color: white;
 }
 
-.yellow, .yellow #chooseBG  {
-    background-color: rgb(255, 255, 0);
+.yellow,
+.yellow #chooseBG {
+  background-color: rgb(255, 255, 0);
 }
 
-.purple, .purple #chooseBG  {
-    background-color: rgb(138, 43, 226);
-    color: white;
+.purple,
+.purple #chooseBG {
+  background-color: rgb(138, 43, 226);
+  color: white;
 }
 
-.blue a, .purple a {
-    color: white;    
+.blue a,
+.purple a {
+  color: white;
 }
 /* --- end colors --- */
 
 /* --- main --- */
 #projects_wrapper {
-    padding: 1em;
+  padding: 1em;
 }
 
 #projects_wrapper article {
-    margin: 2em 0.5em;
-    padding: 1em 1em 2em 1em;
-    border: 1px solid rgb(0, 0, 0);
+  margin: 2em 0.5em;
+  padding: 1em 1em 2em 1em;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 #projects_wrapper article {
-    margin-top: 0em;
-    border-radius: 1em;
+  margin-top: 0em;
+  border-radius: 1em;
 }
 
 #projects_wrapper article h2 {
-    margin-bottom: 0.25em;
+  margin-bottom: 0.25em;
 }
 
-#projects_wrapper article p, #detail p {
-    margin-bottom: 1.5em;
+#projects_wrapper article p,
+#detail p {
+  margin-bottom: 1.5em;
 }
 
-#projects_wrapper article a, #detail a {
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 10px;
-    padding: 0.5em;
-    transition: 0.5s;
-    box-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
+#projects_wrapper article a,
+#detail a {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 0.5em;
+  transition: 0.5s;
+  box-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
 }
 
 #projects_wrapper article a:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .demo {
-    margin-left: 0.5em;
+  margin-left: 0.5em;
 }
 
 /* --- detail --- */
 #detail {
-     padding-left: 1em;
+  padding-left: 1em;
 }
 
 #detail div {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 #detail h2 {
-    margin: 1em 0em;
-} 
+  margin: 1em 0em;
+}
 
 /* --- readme --- */
 #readMe {
-    padding: 1em;
+  padding: 1em;
 }
 
 #readMe ul {
-    padding: 0em 1em;
+  padding: 0em 1em;
 }
 
-#readMe h2, #readMe h3, #readMe h4 {
-    margin: 0.5em 0em;
+#readMe h2,
+#readMe h3,
+#readMe h4 {
+  margin: 0.5em 0em;
 }
 
 #readMe img {
-    width: 100%;
-    margin: 1em 0em;
+  width: 100%;
+  margin: 1em 0em;
 }
 
 #readMe a {
-    margin-top: 0.5em;
-    text-decoration: underline;
-    display: block;
+  margin-top: 0.5em;
+  text-decoration: underline;
+  display: block;
 }
 
 #readMe pre {
-    padding: 1em;
-    background-color: rgba(0,0,0, 0.25);
-    margin: 1em 0.5em;
-    border-radius: 0.5em;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin: 1em 0.5em;
+  border-radius: 0.5em;
 }
 
 /* --- end readme --- */
 
 .dot {
-    height: 1em;
-    width: 1em;
-    margin: 0em 0.5em 0.15em 0em;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
+  height: 1em;
+  width: 1em;
+  margin: 0em 0.5em 0.15em 0em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 #languages div {
-    display: inline-block;
+  display: inline-block;
 }
 
 #languages p {
-   padding: 0 0.5em 0 0;
+  padding: 0 0.5em 0 0;
 }
 
 /* --- end detail --- */
 /* --- end main --- */
 /* --- footer --- */
 footer {
-    padding: 1em;
-    border-top: 1px solid black;
+  padding: 1em;
+  border-top: 1px solid black;
 }
 /* --- end footer --- */
 /* --- Support checks --- */
 
-@supports(display:flex) {
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 1em 4em;
-    }
+@supports (display: flex) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1em 4em;
+  }
 
-    header a {
-        margin-right: 0em;
-        vertical-align: initial;
-    }
+  header a {
+    margin-right: 0em;
+    vertical-align: initial;
+  }
 
-    header #chooseBG {
-        position: relative;
-    }
+  header #chooseBG {
+    position: relative;
+  }
 
-    #projects_wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
+  #projects_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 
-    #projects_wrapper article {
-        position: relative;
-        width: 20em;
-        height: 21em;
-    }
+  #projects_wrapper article {
+    position: relative;
+    width: 20em;
+    height: 21em;
+  }
 
-    #projects_wrapper article > div:last-of-type {
-        position: absolute;
-        bottom: 1.5em;
-    }
+  #projects_wrapper article > div:last-of-type {
+    position: absolute;
+    bottom: 1.5em;
+  }
 
-    #projects_wrapper article p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 6;
-        overflow: hidden;
-        margin-bottom: 1em;
-    }
+  #projects_wrapper article p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    margin-bottom: 1em;
+  }
 
-    #projects_wrapper #languages p {
-        display: inline-block;
-        margin: 0em;
-    }
-
+  #projects_wrapper #languages p {
+    display: inline-block;
+    margin: 0em;
+  }
 }
 
 /* --- end support checks --- */
 
 @media only screen and (max-width: 768px) {
-    #readMe code {
-        white-space: normal;
+  #readMe code {
+    white-space: normal;
+  }
+
+  #readMe {
+    padding: 2em;
+    margin-bottom: 6em;
+  }
+
+  #readMe a {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  @supports (display: flex) {
+    #back {
+      white-space: nowrap;
     }
 
-    #readMe {
-        padding: 2em;
-        margin-bottom: 6em;
+    header {
+      padding: 1em;
     }
 
-    #readMe a {
-        white-space: normal;
-        word-break: break-word;
+    header h1 {
+      text-align: center;
     }
-    
-    @supports (display: flex) {
-        header a:first-of-type {
-            white-space: nowrap;
-        }
-
-        header {
-            padding: 1em;
-        }
-
-        header h1 {
-            text-align: center;
-        }
-    }
+  }
 }
 
-
 @media only screen and (max-width: 600px) {
-    #colorArray {
-        top: 7.7em;
-    }
+  #colorArray {
+    top: 7.7em;
+  }
 }
