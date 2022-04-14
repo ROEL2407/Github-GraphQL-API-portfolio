@@ -80,7 +80,7 @@ The website can be viewed live on [here](https://portfolio-website-roel.herokuap
 - [ ] Contact page with form
 - [ ] About page
 - [ ] Page with a form to fill the about page
-- [ ] Login
+- [ ] Login for admin purposes
 
 ## Commits
 
