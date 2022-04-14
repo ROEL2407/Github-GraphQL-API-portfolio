@@ -54,6 +54,10 @@ header a {
     vertical-align: baseline;
 }
 
+header h1 {
+    margin: 0em 1em;
+}
+
 header button {
     max-width: 9em;
     padding: 0.75em 0em;
