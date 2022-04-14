@@ -94,6 +94,7 @@ In this repo we will commit our work. To make this more visible for ourselves an
 
 - [GitHub GraphQL API](https://docs.github.com/en/enterprise-server@3.4/graphql)
 - [Markdown-it](https://www.npmjs.com/package/markdown-it)
+- [Caniuse](https://caniuse.com)
 
 ### Credits
 
