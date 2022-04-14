@@ -15,9 +15,17 @@
 
 A portfolio website built with the GitHub GraphQL. You can see all GitHub projects of a person and see more details about it.
 
+Entree
+
+![portfolio](https://user-images.githubusercontent.com/24413936/163160763-5486e7a6-471e-4d72-bb55-b5a521761966.png)
+
+Details
+
+![portfoliodetails](https://user-images.githubusercontent.com/24413936/163160790-4355db0f-072b-4c09-b010-0d3849248dbe.png)
+
 ## Features
 
-This is app is a portfolio site where you can see all your GitHub repositories. You see your repository with a description on the homepage and the languages the code consists of. You have two buttons, one for the live demo and one to go to a detail page. On the detail page, you can read the README of that project.
+This is app is a portfolio site where you can see all your GitHub repositories. You see your repository with a description on the homepage and the languages the code consists of. You have two buttons, one for the live demo and one to go to a detail page. On the detail page, you can read the README of that project. With the button at the top, you can pick a background color. 
 
 ## Paid attention
 
