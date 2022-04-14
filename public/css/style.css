@@ -286,10 +286,6 @@ footer {
 /* --- end support checks --- */
 
 @media only screen and (max-width: 768px) {
-    #colorArray {
-        top: 7.7em;
-    }
-
     #readMe code {
         white-space: normal;
     }
@@ -316,5 +312,12 @@ footer {
         header h1 {
             text-align: center;
         }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    #colorArray {
+        top: 7.7em;
     }
 }
