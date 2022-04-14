@@ -25,7 +25,7 @@ Details
 
 ## Features
 
-This is app is a portfolio site where you can see all your GitHub repositories. You see your repository with a description on the homepage and the languages the code consists of. You have two buttons, one for the live demo and one to go to a detail page. On the detail page, you can read the README of that project. With the button at the top, you can pick a background color. 
+This is app is a portfolio site where you can see all your GitHub repositories. You see your repository with a description on the homepage and the languages the code consists of. You have two buttons, one for the live demo and one to go to a detail page. On the detail page, you can read the README of that project. With the button at the top, you can pick a background color.
 
 ## Paid attention
 
@@ -70,11 +70,17 @@ npm start
 The website can be viewed live on [here](https://portfolio-website-roel.herokuapp.com/)
 
 ## Checklist
-- [x] Show art
-- [x] Search art
-- [x] Add search hash
-- [x] Art detail page
-- [ ] Sort alphabetical
+
+- [x] Show repo's
+- [x] Detail of repo's
+- [x] Language('s) of repo's
+- [x] README in detail page displayed
+- [x] Change color of webpage
+- [x] Save changed color in localstorage
+- [ ] Contact page with form
+- [ ] About page
+- [ ] Page with a form to fill the about page
+- [ ] Login
 
 ## Commits
 
