@@ -48,14 +48,10 @@ header {
 }
 
 header a {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: inline-block;
     margin-right: 19vw;
     vertical-align: baseline;
-}
-
-header h1 {
-    color: rgb(255, 255, 255);
 }
 
 header button {
