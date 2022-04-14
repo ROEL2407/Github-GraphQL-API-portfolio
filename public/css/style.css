@@ -289,6 +289,10 @@ footer {
 /* --- end support checks --- */
 
 @media only screen and (max-width: 768px) {
+    #colorArray {
+        top: 7.7em;
+    }
+
     #readMe code {
         white-space: normal;
     }
