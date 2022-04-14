@@ -213,9 +213,13 @@ header #chooseBG {
     display: inline-block;
   }
   
-  #languages p {
-    padding: 0 0.5em 0 0;
-  }
+#languages div {
+    display: inline-block;
+}
+
+#languages p {
+   padding: 0 0.5em 0 0;
+}
 
 /* --- end detail --- */
 /* --- end main --- */
@@ -270,13 +274,6 @@ footer {
         -webkit-line-clamp: 6;
         overflow: hidden;
         margin-bottom: 1em;
-    }
-  
-    #languages {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin-bottom: 2.5em;
     }
 
     #projects_wrapper #languages p {
