@@ -69,6 +69,13 @@ npm start
 
 The website can be viewed live on [here](https://portfolio-website-roel.herokuapp.com/)
 
+## Checklist
+- [x] Show art
+- [x] Search art
+- [x] Add search hash
+- [x] Art detail page
+- [ ] Sort alphabetical
+
 ## Commits
 
 In this repo we will commit our work. To make this more visible for ourselves and others, we've added little headers to the commit titles:
