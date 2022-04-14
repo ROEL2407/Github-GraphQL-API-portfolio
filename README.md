@@ -7,6 +7,7 @@
 - [Paid attention](#paid-attention)
 - [Installation](#installation)
 - [Live Demo](#live-demo)
+- [Checklist](#checklist)
 - [Commits](#commits)
 - [Resources](#resources)
 - [License](#license)
@@ -89,6 +90,9 @@ In this repo we will commit our work. To make this more visible for ourselves an
 - Created = a file is created
 - Updated = updated a file or piece of code
 - Delete = deleted a file
+
+## Authors
+Made by [Marloes Tacx](https://github.com/marloestacx) & [Roel Komen](https://github.com/ROEL2407)
 
 ## Resources
 
