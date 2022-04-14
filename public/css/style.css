@@ -328,4 +328,7 @@ footer {
   #colorArray {
     top: 7.7em;
   }
+  #back + a + #chooseBG + #colorArray {
+    top: 11.3em;
+  }
 }
