@@ -260,7 +260,7 @@ footer {
     #projects_wrapper article {
         position: relative;
         width: 20em;
-        height: 20em;
+        height: 21em;
     }
 
     #projects_wrapper article > div:last-of-type {
